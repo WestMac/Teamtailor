@@ -1,0 +1,78 @@
+
+body {
+  font-size: 1.25rem;
+  height: 100vh;
+}
+#root {
+  height: 100%;
+}
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20%;
+  max-height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-main {
+  background-color: #f43f85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: -webkit-center;
+  max-height: 80%;
+  min-height: 80%;
+}
+
+.btn {
+  max-width: 40%;
+  width: 80%;
+  height: 5vh;
+  font-size: 16px;
+  font-size: 1.5vw;
+  border-radius: 1.5vmax;
+  background-color: #61dafb;
+  overflow-wrap: break-word;
+  font-family: 'Oswald';
+}
+
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: 3px 2px 22px 1px rgba(102, 215, 93, 0.8);
+}
+@media only screen and (max-width: 750px) {
+  .btn {
+    min-width: 100%;
+    height: 3.5vh;
+    font-size: 3.5vw;
+  }
+}
+
+.wrapper {
+  max-width: 75%;
+}
+
+.buttonWrapper {
+  width: 35%;
+}
+
+h1 {
+  font-size:3.125vmax;
+}
+
+.company-name {
+  color: #f43f85;
+}

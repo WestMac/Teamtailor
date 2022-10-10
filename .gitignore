@@ -1,0 +1,6 @@
+**/logs
+*.log
+*.env
+**/.env
+**/node_modules
+**/build
