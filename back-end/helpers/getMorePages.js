@@ -1,3 +1,5 @@
+const { delay } = require("../helpers/delay");
+
 module.exports.getMorePages = async (service, pageCount, arrayOfData) => {
   for (let i = 2; i <= pageCount; i++) {
     const {

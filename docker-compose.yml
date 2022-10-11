@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  api:
+    container_name: api-container
+    restart: always
+    build: ./back-end
+    ports:
+      - "4444:4444"
+  front-end:
+    container_name: front-end-container
+    restart: always
+    build: ./front-end
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api

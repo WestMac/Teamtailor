@@ -1,5 +1,7 @@
+const { Logger } = require("../helpers/logger");
+
 module.exports.errorHandler = (error, request, response, next) => {
-  console.log(`error ${error.message}`);
+  Logger.warn(`error ${error.message}`);
   const status = error.status || 400;
 
   response.status(status).send(error.message);

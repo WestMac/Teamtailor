@@ -19,7 +19,7 @@ module.exports.tempCleaner = async () => {
     const date = file.split("-")[1].split(".")[0];
     if (date < Date.now() - 1800000 && file) {
       Logger.info(`Removing temp file: ${file}`);
-      return fs.unlink(path.join(__dirname, "..", "temp", file), err => console.log(err));
+      return fs.unlink(path.join(__dirname, "..", "temp", file), err => Logger.error(`Failed to remove files with error info: ${err}`));
     }
     return file;
   });

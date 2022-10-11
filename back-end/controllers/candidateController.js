@@ -1,4 +1,3 @@
-const { delay } = require("../helpers/delay");
 const { getMorePages } = require("../helpers/getMorePages");
 const { Logger } = require("../helpers/logger");
 const { saveCsv } = require("../helpers/saveFile");

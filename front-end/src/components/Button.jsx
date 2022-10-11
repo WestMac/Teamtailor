@@ -18,7 +18,6 @@ export default class Button extends Component {
     render () {
         return (
             <div className="buttonWrapper">
-                <a href='http://localhost:4444/candidates'>download</a>
                 <button
                     type="button"
                     onClick={e => this.click(e)}

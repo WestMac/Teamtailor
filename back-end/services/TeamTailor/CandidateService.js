@@ -5,7 +5,6 @@ class CandidateService {
     const url = number
       ? `candidates?include=job-applications&fields[candidates]=first-name,last-name,email,id&fields[job-applications]=created-at,id&page[size]=30&page[number]=${number}`
       : `candidates?include=job-applications&fields[candidates]=first-name,last-name,email,id&fields[job-applications]=created-at,id&page[size]=30`;
-    console.log(encodeURI(process.env.TEAMTAILOR_API_URL.concat(url)));
     return await axios({
       method: "get",
       url: encodeURI(process.env.TEAMTAILOR_API_URL.concat(url)),
