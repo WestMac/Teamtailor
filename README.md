@@ -14,6 +14,8 @@ Create .env files using examples located in:
  ┃ ┗ 📜.env.example
 ```
 
+Then open directory in your go-to terminal and run
+
 ```bash
   docker-compose build
   docker-compose up
