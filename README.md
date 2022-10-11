@@ -6,12 +6,13 @@ This is recruitment task for Teamtailor which was:
 ## Installation
 
 Create .env files using examples located in:
+```
 📦Teamtailor
  ┣ 📂front-end
  ┃ ┗ 📜.env.example
  ┣ 📂back-end
  ┃ ┗ 📜.env.example
-
+```
 
 ```bash
   docker-compose build
